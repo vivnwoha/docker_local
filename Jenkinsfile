@@ -33,7 +33,7 @@ pipeline{
     }
     stage('Deploy to nexus'){
       steps{
-        sh 'mvn deploy'
+        sh 'mvn deploy -s ./settings.xml'
       }
     }
    //  stage('Tomcat'){
