@@ -9,17 +9,17 @@ pipeline{
         git 'https://github.com/kifediniru393/web-app.git'
       }
     }
-    stage('Build containers'){
-      steps{
-        sh 'docker-compose up -d'
-      }
-    }
-    stage('Initializing container'){
-      steps{
-        sh 'echo waiting for all container services to be up'
-        sh 'sleep 60'
-      }
-    }
+    // stage('Build containers'){
+    //   steps{
+    //     sh 'docker-compose up -d'
+    //   }
+    // }
+    // stage('Initializing container'){
+    //   steps{
+    //     sh 'echo waiting for all container services to be up'
+    //     sh 'sleep 60'
+    //   }
+    // }
     stage('Execute maven package'){
       steps{
         echo 'package artifact'
@@ -36,12 +36,12 @@ pipeline{
         sh 'mvn deploy'
       }
     }
-    stage('Tomcat'){
-      steps {
-      echo 'Pushing to Tomcat'
-       deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://172.31.63.244:8080/')], contextPath: null, war: 'target/*war'
-        echo 'Done'
-    }
-   }
+   //  stage('Tomcat'){
+   //    steps {
+   //    echo 'Pushing to Tomcat'
+   //     deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://172.31.63.244:8080/')], contextPath: null, war: 'target/*war'
+   //      echo 'Done'
+   //  }
+   // }
   }
 }
