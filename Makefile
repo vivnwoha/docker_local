@@ -13,6 +13,7 @@ up:
 # Get Jenkins admin password
 get-jenkins-password:
 	@echo "Getting Jenkins Initial Admin Password:"
+	@sleep 50
 	@docker exec $(JENKINS_CONTAINER) cat /var/jenkins_home/secrets/initialAdminPassword
 	@echo ""
 
