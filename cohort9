@@ -11,7 +11,7 @@
     }
     stage("2. build"){
       steps{
-        sh "echo start of maven build"
+        sh "echo start of maven build."
         sh "mvn clean package"
       }
     }
