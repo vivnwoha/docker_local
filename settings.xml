@@ -3,12 +3,12 @@
         <server>
             <id>acada-snapshot</id>
             <username>admin</username>
-            <password>root123</password>
+            <password>root</password>
         </server>
         <server>
             <id>acada-release</id>
             <username>admin</username>
-            <password>root123</password>
+            <password>root</password>
         </server>
     </servers>
 </settings>
