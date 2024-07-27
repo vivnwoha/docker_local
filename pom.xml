@@ -96,15 +96,15 @@
 
 	<distributionManagement>
 	    <repository>
-	      <id>docker_release</id>
+	      <id>project-release</id>
 	      <name>ACADA Learning release Nexus Repository</name>
-	      <url>http://nexus:8081/repository/docker_release/</url>
+	      <url>http://nexus:8081/repository/project-release/</url>
 	    </repository>
 
 	    <snapshotRepository>
-	      <id>docker_snapshot</id>
+	      <id>project-snapshot</id>
 	      <name>ACADA Learning snapshot Nexus Repository </name>
-	      <url>http://nexus:8081/repository/docker_snapshot/</url>
+	      <url>http://nexus:8081/repository/project-snapshot/</url>
 	    </snapshotRepository>
 
 	</distributionManagement>
