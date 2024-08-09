@@ -3,12 +3,12 @@
         <server>
             <id>project-snapshot</id>
             <username>admin</username>
-            <password>root</password>
+            <password>admin123</password>
         </server>
         <server>
             <id>project-release</id>
             <username>admin</username>
-            <password>root</password>
+            <password>admin123</password>
         </server>
     </servers>
 </settings>
